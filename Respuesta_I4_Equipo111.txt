@@ -7,3 +7,20 @@ A- El color de fondo en TESTING es blue
 B- El color de fondo en DESARROLLO es yellow
 C- El color de fondo en MASTER es blue
 D- Quedó el favicon de Alfa
+
+Pregunta :
+E- ¿Algún integrante tuvo problemas al hacer el push?
+F- ¿Qué problemas surgieron?
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+H- ¿Qué sucede si cada uno utiliza el push -f ?
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+
+E) Beta tuvo problemas para pushear, ya que generaba conflicto con el anterior commit de Alfa. Se forzó el pusheo con push -f
+F) Conflictos entre ramas que tenía información que no se complementaba, sino que se pisaba entre sí.
+ Además de que el push -f al forzar el push, no arregla el conflicto, sino que sube los archivos igualmente.
+G) Hay varias soluciones. Una podría ser resolver a mano cada conflicto, teniendo como consecuencia tener que estar pendiente de cada conflicto que pueda surgir y no poder actualizar la rama rápidamente. A su vez, esta solución sería la que menor problemas traería a futuro.
+Otra "solución" sería forzar los push. Cada commit se mandaría sin problemas pero es un método muy propenso a generar errores en los archivos en que se trabajan
+H) Se pisa completamente el push anterior
+I) Resolver cada conflicto que te indique el git bash antes de pushear definitivamente. Una vez que el html de testing tenga todos los <p> correspondientes, hacer un merge a DESARROLLO.
